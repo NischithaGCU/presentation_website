@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #fafafa;
+            color: #d21212;
+            line-height: 1.6;
+        }
+
+        header {
+            background: url('https://t3.ftcdn.net/jpg/06/07/83/76/360_F_607837697_RaFl9VbfPVgQReI63ZoKsZNQCqKu0lI4.jpg') no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            color: #ffddc1; /* Light peach color */
+        }
+
+        header p {
+            font-size: 1.5rem;
+            color: #ffd700; /* Gold color */
+        }
+
+        nav {
+            background: #ff6347; /* Tomato color */
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            color: #ffeb3b; /* Yellow color */
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin: 2rem 0;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: #ff6347; /* Tomato color */
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .menu-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 1rem;
+            padding: 1rem;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .menu-item h3 {
+            margin-top: 1rem;
+            color: #ff6347; /* Tomato color */
+        }
+
+        .menu-item p {
+            color: #3b0202;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+            background: #e5c6c6;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            margin: 0.5rem 0;
+            color: #ae1010;
+        }
+
+        form input, form textarea {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            background: #ff6347; /* Tomato color */
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #ff4500; /* OrangeRed color */
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #e50c0c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="overlay">
+            <h1>Welcome to BELL'S Restaurant</h1>
+            <p>Delicious food, Cozy ambiance, and Great service</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact us">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <img src="https://www.eatingwell.com/thmb/_1_8onlR8ep4zUJvBLE8jrHTS4Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/spaghetti-spinach-sauce-1x1-386-927d880181af484eb54cbb94a5c9d464.jpg" alt="Dish 1">
+                    <h3>Spinach sauce spagetti </h3>
+                    <p>spagetti made of semolina, blached spinach,with goodnes of herbs and goodness of cheese </p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://anthonyspizza-deland.com/wp-content/uploads/2020/09/Caesar-Salad-1.jpg" alt="Dish 2">
+                    <h3>ceaser salad</h3>
+                    <p>Caesar salad is made with romaine lettuce, croutons, Parmesan cheese, and with th delicious and rich Caesar dressing </p>  
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.shutterstock.com/image-photo/bruschetta-sandwiches-cherry-tomatoes-mozzarella-600nw-2282808125.jpg" alt="Dish 3">
+                    <h3>Bruschetta</h3>
+                    <p>It's just a mixture of chopped tomatoes, balsamic, basil, and garlic, spooned over olive-oil brushed slices of toasted baguette or rustic bread</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.herzindagi.info/image/2023/Jul/smoothie-recipes-for-weight-loss.jpg" alt="Dish 4">
+                    <h3>smoothie </h3>
+                    <p>smoothie are made of rich nutrients and filled with goodness of berries and fruits </p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.ctfassets.net/nw5k25xfqsik/64VwvKFqxMWQORE10Tn8pY/200c0538099dc4d1cf62fd07ce59c2af/20220211142754-margherita-9920.jpg" alt="Dish 5">
+                    <h3>margherita pizza </h3>
+                    <p>freshly ground dough with delicious tomato based sauce topped with nutritious mozarella </p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://thecococompany.com/cdn/shop/products/ARABIATA_VEG_1024x1024.jpg?v=1689344114" alt="Dish 6">
+                    <h3>penne pasta </h3>
+                    <p> it is made of semolina with delicious cheese and tomato based sauces with mix of herbs </p>
+                </div>
+                <!-- Add more menu items as needed -->
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Our restaurant offers a unique dining experience with a blend of traditional and modern culinary delights. Our chefs use the freshest ingredients to prepare dishes that not only satisfy your taste buds but also create a memorable dining experience. We are committed to providing excellent service and a cozy ambiance to ensure you have a wonderful time with us.</p>
+        </section>
+        <section id="contact us">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
